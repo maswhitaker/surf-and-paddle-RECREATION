@@ -13,6 +13,9 @@ header{
   max-width: 100%;
   height: 180px;
   margin-top: -22px;
+  @media screen and (min-width: 700px){
+    margin-top: -45px;
+  }
 
   h1{
     color: #E5F9FF;
@@ -20,6 +23,22 @@ header{
     padding-top: 50px;
     font-family: Oswald;
     font-size: 2em;
+    @media screen and (min-width: 700px){
+      font-size: 4em;
+      color: #00BFFF;
+    }
+  }
+
+  input{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    @media screen and (min-width: 700px){
+      text-align: inherit;
+      margin: 0 0 0 0;
+      position: absolute;
+        top: 0px;
+    }
   }
 }
 
@@ -134,15 +153,15 @@ aside{
 }
 
 article{
+  @media screen and (min-width:600px){
+    display: none;
+  }
 
   h2{
     color: white;
     font-family: Oswald;
     font-size: 1.8em;
     text-align: center;
-    @media screen and (min-width: 600px){
-      display: none;
-    }
   }
   #target{
     width: 90%;
@@ -153,9 +172,6 @@ article{
     border-radius: 20px;
     height: 200px;
     background-size: cover;
-    @media screen and (min-width:600px){
-      display: none;
-    }
   }
 }
 
